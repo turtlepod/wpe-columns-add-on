@@ -1,0 +1,95 @@
+/* Setting */
+.wpe-col-remove{
+	width: 16px;
+	height: 16px;
+	float: right;
+	background: url('../images/remove.png');
+	opacity: 0.8;
+	margin-top: -20px;
+	margin-right: 5px;
+}
+.wpe-col-remove:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+.wpe-col::before{
+	content: "Column";
+	display: block;
+	clear: both;
+	width: auto;
+	background-color: rgba(204, 204, 204, 0.3);
+	color: #555;
+	padding: 0 5px;
+	font-size: 10px;
+	height: 25px;
+	line-height: 25px;
+	text-transform: uppercase;
+}
+.wpe-col.wpe-col-12-12::before{
+	content: "Column 1/2-1/2";
+}
+.wpe-col.wpe-col-13-23::before{
+	content: "Column 1/3-2/3";
+}
+.wpe-col.wpe-col-23-13::before{
+	content: "Column 2/3-1/3";
+}
+.wpe-col.wpe-col-13-13-13::before{
+	content: "Column 1/3-1/3-1/3";
+}
+.wpe-col:hover .wpe-col-1,
+.wpe-col:hover .wpe-col-2,
+.wpe-col:hover .wpe-col-3{
+	background-color: rgba(204, 204, 204, 0.1);
+}
+
+
+/* ===== Col ===== */
+.wpe-col::after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.wpe-col{
+	width: 100%;
+	clear: both;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.wpe-col-1,.wpe-col-2,.wpe-col-3{
+	float: left;
+}
+
+/* ===== 12-12 ===== */
+.wpe-col.wpe-col-12-12 .wpe-col-1{
+	width: 47.5%;
+	margin-right: 5%;
+}
+.wpe-col.wpe-col-12-12 .wpe-col-2{
+	width: 47.5%;
+}
+/* ===== 13-23 ===== */
+.wpe-col.wpe-col-13-23 .wpe-col-1{
+	width: 30%;
+	margin-right: 5%;
+}
+.wpe-col.wpe-col-13-23 .wpe-col-2{
+	width: 65%;
+}
+/* ===== 23-13 ===== */
+.wpe-col.wpe-col-23-13 .wpe-col-1{
+	width: 65%;
+	margin-right: 5%;
+}
+.wpe-col.wpe-col-23-13 .wpe-col-2{
+	width: 30%;
+}
+/* ===== 13-13-13 ===== */
+.wpe-col.wpe-col-13-13-13 .wpe-col-1{
+	width: 30%;
+	margin-right: 5%;
+}
+.wpe-col.wpe-col-13-13-13 .wpe-col-2{
+	width: 30%;
+	margin-right: 5%;
+}
+.wpe-col.wpe-col-13-13-13 .wpe-col-3{
+	width: 30%;
+}

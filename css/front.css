@@ -1,0 +1,55 @@
+.wpe-col-remove{
+	display: none;
+}
+/* ===== Col ===== */
+.wpe-col::after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.wpe-col{
+	width: 100%;
+	clear: both;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.wpe-col-1,.wpe-col-2,.wpe-col-3{
+	float: left;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* ===== 12-12 ===== */
+.wpe-col.wpe-col-12-12 .wpe-col-1{
+	width: 47.5%;
+	margin-right: 5%;
+}
+.wpe-col.wpe-col-12-12 .wpe-col-2{
+	width: 47.5%;
+}
+/* ===== 13-23 ===== */
+.wpe-col.wpe-col-13-23 .wpe-col-1{
+	width: 30%;
+	margin-right: 5%;
+}
+.wpe-col.wpe-col-13-23 .wpe-col-2{
+	width: 65%;
+}
+/* ===== 23-13 ===== */
+.wpe-col.wpe-col-23-13 .wpe-col-1{
+	width: 65%;
+	margin-right: 5%;
+}
+.wpe-col.wpe-col-23-13 .wpe-col-2{
+	width: 30%;
+}
+/* ===== 13-13-13 ===== */
+.wpe-col.wpe-col-13-13-13 .wpe-col-1{
+	width: 30%;
+	margin-right: 5%;
+}
+.wpe-col.wpe-col-13-13-13 .wpe-col-2{
+	width: 30%;
+	margin-right: 5%;
+}
+.wpe-col.wpe-col-13-13-13 .wpe-col-3{
+	width: 30%;
+}
